@@ -29,6 +29,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
       monacoEditor
     );
 
+    // Apply highlighter and clean out warning messages for parsing while writing code
     highlighter.highLightOnDidChangeModelContent(
       () => {},
       () => {},
